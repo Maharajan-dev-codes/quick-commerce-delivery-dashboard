@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="your_password",
+    password="password",
     database="quick_commerce_analysis_v2"
 )
 cursor = conn.cursor()
@@ -123,4 +123,5 @@ for d in range(days):
 
 conn.commit()
 print("✅ Fresh Coimbatore dataset generated successfully")
+
 
